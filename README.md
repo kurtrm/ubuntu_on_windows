@@ -22,7 +22,7 @@ I think that was a fairly modest list of demands to Windows.
 
 ## Installation
 
-This is pretty easy. All you have to do is search 'Ubuntu' in the Windows Store and it will provide directions for what you need to do to start using WSL. READ THE DESCRIPTION. YOu have to change one little setting through the Control Panel before you start using it.
+This is pretty easy. All you have to do is search 'Ubuntu' in the Windows Store and it will provide directions for what you need to do to start using WSL. READ THE DESCRIPTION. You have to change one little setting through the Control Panel before you start using it.
 
 After performing a restart, you're ready to start using WSL. Open a terminal and you immediately have most of the same commands and tools available to you as on a normal Ubuntu terminal. It comes pre-loaded with Python 3.5. _Python 2.7 does not come installed_. Additionally, you'll need to follow the Ubuntu directions for downloading Python3.6. I used this forum to do that: https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get There, you can alias your Python3 command for Python3.6. I haven't gone through the trouble of downloaded Python 2.7 yet, but I imagine the process is similar. Additionally, you'll need to download pip or pip3.
 
@@ -64,7 +64,7 @@ You should be all set with Sublime after this. If you get some weird errors, you
 
     C:\Users\kurtrm\AppData\Roaming\Sublime Text 3
 
-I guess this is where your settings are stored.
+(I guess this is where your settings are stored...)
 
 Lastly, the only other issue I had was postgres. I know that it comes installed on Ubuntu, but I wasn't entirely sure it came installed on WSL, so I went ahead and downloaded it anyway. I was unable to use my terminal commands ```psql``` or ```sudo -u postgres psql postgres```... because the server wasn't running. Run ```sudo service /etc/init.d/postgresql start``` to get it running, and I recommend Googling methods to make the server start automatically if you want to. I did this only because I never had to do mess with the server on Ubuntu. You will also likely need to create a super user (```CREATE USER <username> WITH SUPERUSER;```) and give it a password.
 
