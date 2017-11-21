@@ -74,3 +74,6 @@ The only other thing worth mentioning is the color scheme. Much like the Command
 
 I hope you found this helpful, and if you have anything else to add for those needing to make this transition, feel free to leave a comment!
     
+#### Update 11/20/2017
+
+Be aware of filename collisions. I had a package named `scripts` that collided with another file on the path. I spent 3 hours trying to grok relative and absolute imports before I realized this. It may not be necessary to add the package to your PATH. At least I learned a lot about paths along the way...
