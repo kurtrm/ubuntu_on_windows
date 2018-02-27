@@ -77,3 +77,7 @@ I hope you found this helpful, and if you have anything else to add for those ne
 #### Update 11/20/2017
 
 Be aware of filename collisions. I had a package named `scripts` that collided with another file on the path. I spent 3 hours trying to grok relative and absolute imports before I realized this. It may not be necessary to add the package to your PATH. At least I learned a lot about paths along the way...
+
+#### Update 2/27/2018
+
+Since ```pipenv``` is becoming the standard for managing and using Python environments, I tried it out a while ago and ran into some issues. I can't tell if it has to do with WSL or something else. I'll continue to troubleshoot and provide an update here.
