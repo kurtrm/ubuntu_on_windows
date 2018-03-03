@@ -81,3 +81,7 @@ Be aware of filename collisions. I had a package named `scripts` that collided w
 #### Update 2/27/2018
 
 Since ```pipenv``` is becoming the standard for managing and using Python environments, I tried it out a while ago and ran into some issues. I can't tell if it has to do with WSL or something else. I'll continue to troubleshoot and provide an update here.
+
+#### Update 3/2/2018
+
+I noticed a comment [here](https://www.reddit.com/r/Python/comments/7kanw5/pipenv_is_the_worst/?st=jeanfjc2&sh=94160f81) mentioning that ```pipenv``` uses some weird color schemes (says PowerShell and cmd are not compatible with ANSI, so I am assuming this is the issue with WSL as well), which seems to be directly related to the problem I'm having. A subsequent comment indicates that a terminal emulator solves this problem. A google search for 'WSL terminal emulators' shows that they're a 'thing' to say the least. So, there is nothing actually incompatible with WSL and ```pipenv``` except the choice in color display. 
