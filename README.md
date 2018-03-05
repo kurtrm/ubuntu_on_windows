@@ -84,4 +84,8 @@ Since ```pipenv``` is becoming the standard for managing and using Python enviro
 
 #### Update 3/2/2018
 
-I noticed a comment [here](https://www.reddit.com/r/Python/comments/7kanw5/pipenv_is_the_worst/?st=jeanfjc2&sh=94160f81) mentioning that ```pipenv``` uses some weird color schemes (says PowerShell and cmd are not compatible with ANSI, so I am assuming this is the issue with WSL as well), which seems to be directly related to the problem I'm having. A subsequent comment indicates that a terminal emulator solves this problem. A google search for 'WSL terminal emulators' shows that they're a 'thing' to say the least. So, there is nothing actually incompatible with WSL and ```pipenv``` except the choice in color display. 
+I noticed a comment [here](https://www.reddit.com/r/Python/comments/7kanw5/pipenv_is_the_worst/?st=jeanfjc2&sh=94160f81) mentioning that ```pipenv``` uses some weird color schemes (says PowerShell and cmd are not compatible with ANSI, so I am assuming this is the issue with WSL as well), which seems to be directly related to the problem I'm having. A subsequent comment indicates that a terminal emulator solves this problem. A google search for 'WSL terminal emulators' shows that they're a 'thing' to say the least. So, there is nothing actually incompatible with WSL and ```pipenv``` except the choice in color display.
+
+#### Update 3/5/2018
+
+I started using [Cmder] (http://cmder.net/), a console emulator. It looks nice, it allows a lot of color customization, tabs, and ANSI colors, so I now have the ability to use ```pipenv```. There's still some funkiness with background colors of directories, so I still have to set LS_COLORS in my ```.bashrc```. To make Cmder run ```bash``` by default, you'll need to go into your settings (```Windows + Alt + P```) and set a predefined task under Startup -> Tasks, then you'll need to click Startup itself and set which task you want to run on startup. I'll post images soon.
