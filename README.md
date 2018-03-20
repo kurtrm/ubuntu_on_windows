@@ -89,3 +89,7 @@ I noticed a comment [here](https://www.reddit.com/r/Python/comments/7kanw5/pipen
 #### Update 3/5/2018
 
 I started using [Cmder] (http://cmder.net/), a console emulator. It looks nice, it allows a lot of color customization, tabs, and ANSI colors, so I now have the ability to use ```pipenv```. There's still some funkiness with background colors of directories, so I still have to set LS_COLORS in my ```.bashrc```. To make Cmder run ```bash``` by default, you'll need to go into your settings (```Windows + Alt + P```) and set a predefined task under Startup -> Tasks, then you'll need to click Startup itself and set which task you want to run on startup. I'll post images soon.
+
+#### Update 3/20/2018
+
+I tried to use Selenium in Python to scrape a website which requires using a chromedriver. Installing the Linux version of the chrome driver proved unsuccessful, I tried pointing the executable path to chrome.exe, which required appending the path to my PATH variable. What I ended up doing is downloading the Windows version of the chromedriver and pointing the executable_path to the Windows version of the chromedriver. Success!
